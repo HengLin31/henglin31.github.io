@@ -1,0 +1,40 @@
+---
+title: Linux 如何避免重複執行特定jar
+date: 2018-03-17 21:00:34
+tags:
+- shell
+---
+
+因為Linux是真正多人多工，若是在不同電腦上遠端登入
+執行同一個特定jar，就會造成重複執行
+所以在一般情況下，會寫script 做成 service
+再透過 start stop restart 去執行
+
+但是目前我遇到的問題是，需要幫還不熟悉linux同事寫一個script
+讓他可以執行他寫的jar，需求上是不允許重複執行又不要做成 service
+而且若發現JVM執行中，則需要刪除舊的JVM後重新執行
+
+所以寫個這個script，去做刪除JVM的動作
+
+```shell kill jar JVM, if exist .sh
+    PID=$(ps aux | grep jar-[0-9] | awk '{print $2}')
+    echo "PID: "$PID
+    if [ -z $PID ]; then
+        echo "not exist PID"
+    else
+        echo "kill PID: "$PID
+        kill -9 $PID
+    fi
+
+```
+
+第1行 ps aux 是找出所有user目前執行中的process
+接著使用 grep 找出特定的process，因為這個jar會帶版號
+例如： jar-1.1.jar 或是升級後 jar-1.2.jar
+所以多判斷帶版號的regex
+最後執行 awk 印出第2欄（因為第2欄是process的PID）
+第3行是檢查PID是否為空字串
+若PID不是空字串就表示JVM已經存在需要執行第7行去強制刪除JVM
+
+這樣一個簡單的script就完成了，現在同事只需要在執行jar前呼叫此.sh檔
+就可以避免重複執行了
