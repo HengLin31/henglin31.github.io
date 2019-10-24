@@ -1,0 +1,53 @@
+body {
+    margin: 30px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100px;
+    display: table;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.progress {
+    width: 3px;
+    height: 100%;
+    margin-left: 28px;
+}
+
+.detail {
+    margin-left: 40px;
+    float:left;
+    position: relative;
+    top: -30px;
+    left: 5px;
+}
+
+.flow-detail {
+    margin: 2px;
+}
+
+.active {
+    background-color: #A8A8A8
+}
+
+.icon-svg {
+    width: 30px;
+    height: 30px;
+}
