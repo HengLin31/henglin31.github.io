@@ -1,0 +1,59 @@
+{
+    "contents": [
+        {
+            "title": "2019 Servtech - Senior Engineer",
+            "content": [
+                "I was responsible for Android tablet and smart watch APP that It can help the factory to record the production line workflow via QR code. When wearing gloves is not convenient that they can use google voice (RecognizerIntent) trigger button to next step."
+            ]
+        },
+        {
+            "title": "2018",
+            "content": [
+                "Responsible for back-end project by Spring Boot framework that I simplify the deployment process. it's a RESTful Server for front-end call API. It's easier to use than Spring MVC.<br/><strong> - Key skill: Spring Boot</strong>",
+                "I was responsible for SPC system module, it calculate the results of CUSUM and EWMA, both are the most common tool for monitoring a quality characteristic of interest."
+            ]
+        },
+        {
+            "title": "2017",
+            "content": [
+                "Responsible for factory work order scheduling module that automated multi-line work order scheduling by work order information. ( reference OptaPlanner )",
+                "I was responsible for Android APP that It can display platform information on mobile phone. Additionally, it send an exception alert message when factory machine trigger alert. And I resolved APP crashed problem when Android 5.0 update to Android 6.0.<br/><strong> - Key skill: Android</strong>",
+                "To assist middleware message platform project, it was used for exchange of information among different devices, e.g. Data transfer among platform, Android, iPhone. And I improve platform performance that the original mobile phone requesting two months of data originally needs to be executed for 90 seconds from platform. Finally, it takes only 5 seconds to complete. It's using pre-processing data and proxy LRU cache."
+            ]
+        },
+        {
+            "title": "2016",
+            "content": [
+                "I resolved the problem that it's big data computing customer report is too large causing out of memory issue. I try my best to prevent the data from staying in memory for long term and the report is quickly append and then merged."
+            ]
+        },
+        {
+            "title": "2015",
+            "content": [
+                "I resolved the problem that it's excessive amount of instant message data volume. It uses a data compression and encrypted technology. It makes a 1MB message that it is reduced to 27KB.<br/><strong> - Key skill: Protocol Buffers</strong>",
+                "I was responsible for big data rule engine module, it's similar to Excel calculation rules for calculation and pivot analysis of big data. It use expression and Trie tree process data."
+            ]
+        },
+        {
+            "title": "2014",
+            "content": [
+                "I  was responsible for back-end project by Spring MVC framework that I focus on real-time monitor and RPC module, it's a RESTful Server for front-end call API. We switched to Spring MVC for security reasons. The project use gradle build and it use MockMVC test ( Unit test framework ).<br/><strong> - Key skills: Spring MVC, RabbitMQ, Gradle</strong>",
+                "I'm improved I/O read file and Master-slave RPC performance that it use NIO selected channel and byte buffer in data processing, it prevent I/O blocking problem.<br/><strong> - Key skill: NIO</strong>",
+                "We participate Intel Global Challenge take first place, I was responsible for demo platform and APP Icon.@[https://www.apec.org/Press/Features/2014/1912_Startups.aspx]@"
+            ]
+        },
+        {
+            "title": "2014 Institute for Information Industry (iii) - Platform application development engineer",
+            "content": [
+                "I was imported NoSQL on project when the accumulated amount of data is too large. Finally, I deploy cluster of Hbase relies on Zookeeper.<br/><strong> - Key skills: HBase, Zookeeper</strong>",
+                "I was improved the stability of the platform that it use Memory Analyzer(MAT) analyze file of memory dump. I found some object reference static object, it can't release by garbage collection. I use weak reference resolved the problem of occasional memory leaks."
+            ]
+        },
+        {
+            "title": "2013",
+            "content": [
+                "Responsible for back-end project by Strust2 framework, and JPA with MySQL. It's a RESTful Server for front-end call API. And it use message queue for other services.<br/><strong> - Key skills: Struts2, ActiveMQ</strong>",
+                "I was improved platform performance that it change real-time data processed from database to memory and reduce front-end API request by using pre-processing data. Finally, at peak concurrent time, it can handle data volume of more than 100 machines. Before that it can handle data volume of 30 machines. ( It fetch CNC controller or PLC point data from factory machine )"            ]
+        }
+    ]
+}
